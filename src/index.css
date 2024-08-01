@@ -1,0 +1,598 @@
+*{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background: rgb(30, 30, 30);
+    overflow: hidden;
+    overflow-y: scroll;
+    color: #fff;
+ }
+ .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+   }
+   .header .logo a{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  .logo{
+    position: relative;
+    font-size: 25px;
+    color: burlywood;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+  }
+  .header .logo a span{
+    color:burlywood;
+    font-size: 50px;
+
+  }
+  .NavBar{
+    margin: 0 20px;
+  }
+  .NavBar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: all 0.5s;
+
+  }
+  .NavBar a:hover{
+    color: burlywood;
+ }
+ .HireMebtn{
+   position: relative;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 45px;
+   background: burlywood;
+   border-radius: 40px;
+   z-index: 1;
+   margin-left: -400px;
+   border: none;
+
+ }
+ .HireMebtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    z-index: -1;
+    border-radius: 40px;
+    background-size: 200%;
+  }
+  .me{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+  }
+  .home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+  }
+  .home-content{
+    max-width: 500px;
+  }
+  .home-content h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+
+
+  }
+  .content-content h3{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .home p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+  }
+  .cv-btn{
+    margin-top: 40px;
+  }
+  .cv-btn a{
+    background: burlywood;
+    font-size: 19px;
+    letter-spacing: 1px;
+    border: 2px solid burlywood;
+    padding: 13px 25px;
+    border-radius: 50px;
+    transition: all 0.5s;
+    color: #fff;
+
+  }
+  .cv-btn a:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+
+  }
+  .home-sci{
+    position: absolute;
+    bottom: 100px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid burlywood;
+    border-radius: 50%;
+    font-size: 20px;
+    color: burlywood;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+  }
+  .home-sci a:hover{
+    color:black;
+  }
+  .home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: burlywood;
+    z-index: -1;
+    transition: .5s;
+
+  }
+  .home-sci a:hover::before{
+    width: 100%;
+  }
+  @keyframes showRight {
+    100%{
+      width: 0;
+    }
+  }
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    font-size: 45;
+  }
+  .heading{
+    font-size: 35px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  *{
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+
+  }
+  body{
+     background: rgb(30, 30, 30);
+     overflow: hidden;
+     overflow-y: scroll;
+     color: #fff;
+  }
+  .header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 10%;
+   background: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+  }
+  .header .logo a{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+  }
+  .logo{
+    position: relative;
+    font-size: 25px;
+    color: burlywood;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .logo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: .2s;
+  }
+  .header .logo a span{
+    color:burlywood;
+    font-size: 50px;
+
+  }
+  .NavBar{
+    margin: 0 20px;
+  }
+  .NavBar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: all 0.5s;
+
+  }
+
+  .NavBar a:hover{
+     color: burlywood;
+  }
+  .HireMebtn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    background: burlywood;
+    border-radius: 40px;
+    z-index: 1;
+    margin-left: -400px;
+    border: none;
+
+  }
+  .HireMebtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    inset: 0;
+    z-index: -1;
+    border-radius: 40px;
+    background-size: 200%;
+  }
+  .me{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+  }
+
+  .home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+  }
+  .home-content{
+    max-width: 500px;
+  }
+  .home-content h1{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+
+
+  }
+  .content-content h3{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .home p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+  }
+  .cv-btn{
+    margin-top: 40px;
+  }
+  .cv-btn a{
+    background: burlywood;
+    font-size: 19px;
+    letter-spacing: 1px;
+    border: 2px solid burlywood;
+    padding: 13px 25px;
+    border-radius: 50px;
+    transition: all 0.5s;
+    color: #fff;
+
+  }
+  .cv-btn a:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+
+  }
+  .home-sci{
+    position: absolute;
+    bottom: 100px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .home-sci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid burlywood;
+    border-radius: 50%;
+    font-size: 20px;
+    color: burlywood;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+  }
+  .home-sci a:hover{
+    color:black;
+  }
+
+  .home-sci_1{
+    margin :0.2rem;
+  }
+  .home-sci a::before{
+    /* position: absolute; */
+    background: burlywood;
+    transition: .5s;
+  }
+  .home-sci a:hover::before{
+    width: 100%;
+  }
+  @keyframes showRight {
+    100%{
+      width: 0;
+    }
+  }
+  .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    font-size: 45;
+  }
+  .heading{
+    font-size: 35px;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  .about-content{
+    font-size: 2.6rem;
+    max-width: 500px;
+    text-align: center;
+
+
+
+  }
+  .about-content p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+  }
+  .HireMebtn.btns{
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 15rem;
+    width: 15rem;
+    margin-left: 10px;
+  }
+  .btn-HireMebtn a::before{
+    background-color: burlywood;
+
+  }
+  .btn{
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+
+  }
+  .container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   grid-gap: 1rem;
+   padding: 1rem 80px;
+   font-size: 1.2rem
+  }
+  .service-box{
+    padding: 1rem;
+    color:#ddd;
+    cursor: pointer;
+  }
+  .service-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+
+  }
+  .img{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+  }
+
+  .box{
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all .45s ease;
+  }
+  .card-heading{
+    margin-top: 150px;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .about_section{
+    display: flex;
+
+  }
+
+  .about_img{
+
+    height :20rem;
+    aspect-ratio: 1/1;
+    border-radius: 1rem;
+    margin-left:13rem;
+    margin-top: -2rem;
+    size: 5;
+
+  }
+  .Services_section{
+    background: transparent;
+    width: 100%;
+    padding: 100px 0px;
+  }
+  .title{
+    color: white;
+    font-size: 20px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  .card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: burlywood;
+  }
+  .text{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  .pra p{
+    color: burlywood;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  }
+  .card .button{
+    background-color: burlywood;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  .card .button:hover{
+    background-color: transparent;
+    border: 2px solid burlywood;
+    cursor: pointer;
+
+  }
+
+  .picture{
+    height: 10rem;
+  }
+
+
